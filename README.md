@@ -11,13 +11,13 @@
    pip install nbsphinx
    ```
 3. `pandoc` is needed to generate documentation from Jupyter Notebooks using Sphinx. Installation instructions can be found [here](https://pandoc.org/installing.html).  
-4. Navigate to `Simple python code/docs/` directory and use the `make` command to generate HTML and LaTeX documentation.
+4. Navigate to `Docs/` directory and use the `make` command to generate HTML and LaTeX documentation.
    ```
    cd sphinx-doc-tutorial/docs/
    make html
    make latexpdf
    ```
-5. The generated documentation can be found in the [`Simple python code/docs/_build/html/`]()
+5. The generated documentation can be found in the [`Docs/_build/html/`]()
 6. For more details refer the official website of [Sphinx](https://www.sphinx-doc.org/en/master/) 
 
 # Instructions to generate Python documentation using Sphinx
