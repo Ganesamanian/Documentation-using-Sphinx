@@ -228,3 +228,5 @@ To create your own documentation from scratch like the simple python code projec
  * The generated HTML or Latex files can be found in `docs/build/html` or `docs/build/latex` respectively.
  * The HTML documentation can be viewed locally via the `docs/build/html/index.html` file. The individual webpage can also be found as `.html` files.
  * The Latex documentation can be viewed via the `docs/build/latex/[project_name].pdf` file.
+
+### For detailed explanation refer the [document](https://github.com/Ganesamanian/Documentation-using-Sphinx/blob/master/Sphinx_Documentation.pdf)
