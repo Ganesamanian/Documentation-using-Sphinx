@@ -1,7 +1,7 @@
 # Instructions to build documentation from this repository
 1. Clone [this](https://github.com/Ganesamanian/Documentation-using-Sphinx) repository using 
    ```
-   git clone https://git.opendfki.de/dinesh_krishna.natarajan/sphinx-doc-tutorial.git
+   git clone https://github.com/Ganesamanian/Documentation-using-Sphinx.git
    ```
 2. Install the following packages using `pip`.
    ```
