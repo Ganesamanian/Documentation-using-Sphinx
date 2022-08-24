@@ -1,3 +1,29 @@
+# Summary about the project
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#instructions-to-build-documentation-from-this-repository">Instructions to build documentation from this repository</a></li>
+    <li>
+      <a href="#instructions-to-generate-Python-documentation-using-Sphinx">Instructions to generate Python documentation using Sphinx</a>
+      <ul>
+        <li><a href="#create-documented-code">Create documented code</a></li>
+        <li><a href="#setup-sphinx-project">Setup sphinx project</a></li>
+        <li><a href="#configure-sphinx-documentation-builder">Configure sphinx documentation builder</a></li>
+        <li><a href="#configure-the-`.rst`-files">Configure the `.rst` files</a></li>
+        <li><a href="#Build-the-documentation-in-HTML-and/or-Latex">Build the documentation in HTML and/or Latex</a></li>
+      </ul>
+    </li>
+    
+  </ol>
+</details>
+
+
+
+
+
+<!-- Instructions to build documentation from this repository -->
 # Instructions to build documentation from this repository
 1. Clone [this](https://github.com/Ganesamanian/Documentation-using-Sphinx) repository using 
    ```
@@ -11,17 +37,22 @@
    pip install nbsphinx
    ```
 3. `pandoc` is needed to generate documentation from Jupyter Notebooks using Sphinx. Installation instructions can be found [here](https://pandoc.org/installing.html).  
-4. Navigate to `Docs/` directory and use the `make` command to generate HTML and LaTeX documentation.
+4. Navigate to `Simple python code/docs/` directory and use the `make` command to generate HTML and LaTeX documentation.
    ```
    cd sphinx-doc-tutorial/docs/
    make html
    make latexpdf
    ```
-5. The generated documentation can be found in the [`Docs/_build/html/`]()
+5. The generated documentation can be found in the [`Simple python code/docs/_build/html/`]()
 6. For more details refer the official website of [Sphinx](https://www.sphinx-doc.org/en/master/) 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Instructions to generate Python documentation using Sphinx -->
 # Instructions to generate Python documentation using Sphinx
 To create your own documentation from scratch like the simple python code project, follow the instructions below.
+
+<!-- Create documented code -->
 ## Step 1: Create documented code
  * Create scripts and modules in Python.
  * For automatic docstring generation in VSCode, use [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) plugin with appropriate convention. 
@@ -50,6 +81,9 @@ To create your own documentation from scratch like the simple python code projec
  such as [`sphinx.ext.napoleon`](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html) are necessary.
  * Different docstring conventions can be used in the same project and [Sphinx](https://www.sphinx-doc.org/en/master/) (and its extensions) will parse them to generate documentation with a uniform convention. 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Setup sphinx project -->
 ## Step 2: Setup sphinx project
 * Install `sphinx` package using pip, if not already installed.
 * From your code's parent directory, create a `docs/` sub-directory to build the documentation files.  
@@ -95,7 +129,13 @@ To create your own documentation from scratch like the simple python code projec
     make builder
     where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
-    ```
+ 
+ 
+   ```
+   
+<p align="right">(<a href="#top">back to top</a>)</p>
+   
+<!-- Configure sphinx documentation builder -->   
 ## Step 3: Configure sphinx documentation builder
  * In the `docs/source/conf.py` file, uncomment the path setup comments shown below and edit the absolute path to the modules directory of the project.
 
@@ -124,6 +164,11 @@ To create your own documentation from scratch like the simple python code projec
     ```python
     html_theme = 'sphinx_rtd_theme'
     ```
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Configure the `.rst` files -->
 ## Step 4: Configure the `.rst` files
  * The 'reStructured Text' files indicate the contents of the documentation. [Here](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) is a primer for the *reStructuredText* markup language. 
  * The `index.rst` acts as the main file (equivalent to a Latex main file). The contents of the documentation can be added directly to the `index.rst` file or individual `.rst` files can be created and then referenced in the `index.rst` file. Each `.rst` file gets its own webpage.
@@ -214,7 +259,8 @@ To create your own documentation from scratch like the simple python code projec
 
       notebooks/demo
    ```
-
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- Build the documentation in HTML and/or Latex -->
 ## Step 5: Build the documentation in HTML and/or Latex
  * From the `docs/` directory, the documentation can be built using the `make builder` command where the builder is either `html` or `latex` or `latexpdf`.
  * For HTML, the options are automatically generated in `docs/source/conf.py` by the  `sphinx-quickstart` command.
@@ -228,5 +274,7 @@ To create your own documentation from scratch like the simple python code projec
  * The generated HTML or Latex files can be found in `docs/build/html` or `docs/build/latex` respectively.
  * The HTML documentation can be viewed locally via the `docs/build/html/index.html` file. The individual webpage can also be found as `.html` files.
  * The Latex documentation can be viewed via the `docs/build/latex/[project_name].pdf` file.
-
-### For detailed explanation refer the [document](https://github.com/Ganesamanian/Documentation-using-Sphinx/blob/master/Sphinx_Documentation.pdf)
+ 
+ <p align="right">(<a href="#top">back to top</a>)</p>
+ 
+ ### For detailed explanation refer the [document](https://github.com/Ganesamanian/Documentation-using-Sphinx/blob/master/Sphinx_Documentation.pdf)
